@@ -9,27 +9,32 @@
 
 <nav>
     <h2>🌲 Park Explorer</h2>
+
     <div>
-        <a href="#">Home</a>
-        <a href="#">Explore</a>
-        <a href="#">Favorites</a>
+        <a href="index.html">Home</a>
+        <a href="parks.html">Explore</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="visited.html">Visited</a>
     </div>
 </nav>
 
 
 <section class="hero">
     <h1>Explore America's National Parks</h1>
-    <p>Discover landscapes, save favorites, and track your adventures.</p>
+    <p>Discover parks, save favorites, and track your adventures.</p>
 
-    <input 
-        type="text" 
-        id="searchBar" 
-        placeholder="Search a national park..."
-    >
+    <div class="search-container">
+        <input 
+            type="text" 
+            id="searchBar" 
+            placeholder="Search national parks..."
+        >
+    </div>
 </section>
 
 
 <section class="stats">
+
     <div>
         <h2>63</h2>
         <p>National Parks</p>
@@ -41,41 +46,105 @@
     </div>
 
     <div>
-        <h2>∞</h2>
-        <p>Adventures</p>
+        <h2>0</h2>
+        <p>Visited</p>
     </div>
+
 </section>
 
 
 <main>
 
+
 <div class="park-card">
     <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Old_Faithful_Geyser_Yellowstone_National_Park.jpg">
+
     <div class="card-content">
         <h2>Yellowstone National Park</h2>
         <p>Wyoming, Montana, Idaho</p>
+        <p>Famous for geysers, wildlife, and geothermal features.</p>
+
         <button>Save Favorite</button>
+        <button class="visit-button">Mark Visited</button>
     </div>
 </div>
 
 
+
 <div class="park-card">
+
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Grand_Canyon_from_Pima_Point_2010.jpg">
+
     <div class="card-content">
+
         <h2>Grand Canyon National Park</h2>
         <p>Arizona</p>
+        <p>Known for incredible canyon views and hiking trails.</p>
+
         <button>Save Favorite</button>
+        <button class="visit-button">Mark Visited</button>
+
     </div>
+
 </div>
 
 
+
+
 <div class="park-card">
+
     <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Mountain_view_from_Clingmans_Dome.jpg">
+
     <div class="card-content">
-        <h2>Great Smoky Mountains</h2>
+
+        <h2>Great Smoky Mountains National Park</h2>
         <p>Tennessee & North Carolina</p>
+        <p>The most visited national park in the United States.</p>
+
         <button>Save Favorite</button>
+        <button class="visit-button">Mark Visited</button>
+
     </div>
+
+</div>
+
+
+
+<div class="park-card">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Zion_Canyon_from_Observation_Point.JPG">
+
+    <div class="card-content">
+
+        <h2>Zion National Park</h2>
+        <p>Utah</p>
+        <p>Known for towering cliffs and scenic hikes.</p>
+
+        <button>Save Favorite</button>
+        <button class="visit-button">Mark Visited</button>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="park-card">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Acadia_National_Park_Maine.jpg">
+
+    <div class="card-content">
+
+        <h2>Acadia National Park</h2>
+        <p>Maine</p>
+        <p>A coastal park featuring mountains and ocean views.</p>
+
+        <button>Save Favorite</button>
+        <button class="visit-button">Mark Visited</button>
+
+    </div>
+
 </div>
 
 
