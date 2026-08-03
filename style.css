@@ -1,38 +1,59 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f7f2;
-    color: #333;
+    background-color: #f1f5f2;
+    color: #222;
 }
 
 header {
-    background-color: #2d6a4f;
+    background: linear-gradient(to right, #1b4332, #40916c);
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
 }
 
 .park-card {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.park-card:hover {
+    transform: translateY(-8px);
+}
+
+.park-card h2 {
+    color: #1b4332;
 }
 
 button {
-    background-color: #40916c;
+    background-color: #2d6a4f;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 12px 18px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 button:hover {
-    background-color: #2d6a4f;
+    background-color: #1b4332;
 }
