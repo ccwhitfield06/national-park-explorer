@@ -1,59 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f1f5f2;
-    color: #222;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7f4;
+    color: #1b1b1b;
 }
 
-header {
-    background: linear-gradient(to right, #1b4332, #40916c);
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #0b3d2e;
     color: white;
-    padding: 40px 20px;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 40px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Grand_Teton_National_Park_2010.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
-header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
 }
 
-header p {
-    font-size: 18px;
+
+.hero p {
+    font-size: 20px;
 }
+
+
+#searchBar {
+    margin-top: 30px;
+    width: 350px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+}
+
+
+
+/* Stats */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+
+.stats div {
+    background:white;
+    padding:25px 50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.stats h2 {
+    margin:0;
+    color:#0b3d2e;
+    font-size:35px;
+}
+
+
+/* Cards */
 
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding: 30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    padding:50px;
 }
+
 
 .park-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+    transition:0.3s;
 }
+
 
 .park-card:hover {
-    transform: translateY(-8px);
+    transform:translateY(-10px);
 }
 
-.park-card h2 {
-    color: #1b4332;
+
+.park-card img {
+    width:100%;
+    height:230px;
+    object-fit:cover;
 }
+
+
+.card-content {
+    padding:25px;
+}
+
+
+.card-content h2 {
+    color:#0b3d2e;
+}
+
+
+.card-content p {
+    color:#555;
+}
+
 
 button {
-    background-color: #2d6a4f;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 15px;
+    background:#0b3d2e;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
 }
 
+
 button:hover {
-    background-color: #1b4332;
+    background:#146c50;
+}
+
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+    nav {
+        padding:20px;
+        flex-direction:column;
+    }
+
+    nav a {
+        margin:10px;
+    }
+
+
+    .hero h1 {
+        font-size:35px;
+    }
+
+
+    #searchBar {
+        width:90%;
+    }
+
+
+    .stats {
+        flex-direction:column;
+        align-items:center;
+    }
+
 }
